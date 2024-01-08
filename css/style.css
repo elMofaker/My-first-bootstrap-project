@@ -1,0 +1,213 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.main-btn{
+    padding: .5rem 1rem;
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.main-title::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* navbar start */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    font-size: 25px;
+    color: white;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+/* navbar end */      
+/* landing start */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* landing end */
+/* features start */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    color: var(--green-color);
+}
+.features .row h4{
+    color: var(--yellow-color);
+}
+/* features end */
+/* out-work start */
+.our-work{
+    background-color: var(--section-color);
+    height: auto;
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+/* img<<row */
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc61;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+    transition: 0.3s;
+}
+/* out-work end */
+/* stuff start */
+.stuff .desc{
+    max-width: 500px;
+}
+/* stuff end */
+/* team start */
+.team{
+    background-color: var(--section-color);
+}
+.team .row{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+/* team end */
+/* tech start */
+.tech .row{
+    padding: 0 5rem;
+}
+.tech .projekt{
+    background-color: var(--dark-color)
+}
+/* tech end */
+/* bold start */
+.bold .container .row .card h6{
+    color: #000;
+}
+.bold .container .row .card{
+    border: none;
+}
+.bold .container .row .card .card-body{
+    border: #00000069 solid .1px;
+}
+
+/* bold end */
+/* subscribe start */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe form input[type=text]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe form input[type=text]:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+.subscribe input[type=submit]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* subscribe end */
+/* footer start  */
+footer{
+    background-color: var(--dark-color);
+}
+footer .container .copyright > span{
+    color: var(--green-color);
+}
+footer .container  div span{
+    color: var(--yellow-color);
+}
+footer .container .row  ul a svg{
+    width: 20px;
+    height: 20px;
+}
+footer .container .row a .facebook{
+    color: #1877f2;
+}
+footer .container .row a .twitter{
+    color: #1da1f2;
+}
+footer .container .row a .linkedin{
+    color: #0a66c2;
+}
+footer .container .row a .youtube{
+    color: #ff0000;
+}
+/* foooter end  */
