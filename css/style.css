@@ -146,6 +146,10 @@ body{
 .team .box h4{
     background-color: var(--green-color);
 }
+.card_team{
+    min-width: 220px
+    
+}
 /* team end */
 /* tech start */
 .tech .row{
