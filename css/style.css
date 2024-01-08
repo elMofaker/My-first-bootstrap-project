@@ -147,7 +147,7 @@ body{
     background-color: var(--green-color);
 }
 .card_team{
-    min-width: 220px
+    min-width: 220px;
     
 }
 /* team end */
